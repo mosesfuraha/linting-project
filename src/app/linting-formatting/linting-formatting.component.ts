@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './linting-formatting.component.html',
-  styleUrl: './linting-formatting.component.css'
+  styleUrl: './linting-formatting.component.css',
 })
-export class LintingFormattingComponent {
-
-}
+export class LintingFormattingComponent {}

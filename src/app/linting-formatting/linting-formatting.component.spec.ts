@@ -8,10 +8,9 @@ describe('LintingFormattingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LintingFormattingComponent]
-    })
-    .compileComponents();
-    
+      imports: [LintingFormattingComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LintingFormattingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

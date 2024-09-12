@@ -6,25 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code Scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running Unit Tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running End-to-End Tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
 ## Linting
 
 Run `npm run lint` to execute ESLint on the entire project. This will check your code for style and quality issues based on the ESLint configuration.
+
+For a quick review of linting in action, check out our [Linting Project Demo](https://linting-project.vercel.app/).
 
 ## Formatting
 
@@ -40,7 +26,7 @@ Husky is set up to run linting and formatting scripts before each commit. This e
 
 ## ESLint Rules
 
-Here are some of the key rules configured in this project’s ESLint setup:
+Here are some of the key rules configured in this project's ESLint setup:
 
 - **`@angular-eslint/directive-selector`**: Enforces consistent naming for Angular directives. In this configuration, directives should use `attribute` type selectors, start with the prefix `app`, and use camelCase style. This helps maintain readability and avoids naming conflicts across the application.
 
