@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { UserService } from '../user.service';
 import { CommonModule } from '@angular/common';
 
@@ -6,6 +6,7 @@ interface USER {
   age: number;
   name: string;
 }
+
 @Component({
   selector: 'app-user-list',
   standalone: true,
@@ -29,10 +30,13 @@ interface USER {
 })
 export class UserListComponent implements OnInit {
   users: USER[] = [];
-
-  constructor(private userService: UserService) {}
+  private userService = inject(UserService);
 
   ngOnInit() {
-    this.users = this.userService.getUsers();
+    this.loadUsers();
+  }
+
+  loadUsers() {
+    this.users = this.userService.getUsers(); // Direct use of the injected service
   }
 }
