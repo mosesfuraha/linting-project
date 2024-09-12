@@ -1,0 +1,68 @@
+<div class="container">
+  <h2 class="title">Linting and Formatting Practice</h2>
+
+  <div class="section">
+    <h3>Linting</h3>
+    <p>
+      Run <code>npm run lint</code> to execute ESLint on the entire project.
+      This will check your code for style and quality issues based on the ESLint
+      configuration.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Formatting</h3>
+    <p>
+      Run <code>npm run format</code> to format all files in the project using
+      Prettier. This will apply the formatting rules defined in the Prettier
+      configuration.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Linting and Formatting Combined</h3>
+    <p>
+      Run <code>npm run lint-and-format</code> to execute both ESLint and
+      Prettier, ensuring that your code adheres to both linting and formatting
+      standards.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Pre-commit Hooks</h3>
+    <p>
+      Husky is set up to run linting and formatting scripts before each commit.
+      This ensures that code quality checks are enforced automatically.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>ESLint Rules</h3>
+    <p>
+      Here are some of the key rules configured in this project’s ESLint setup:
+    </p>
+    <ul>
+      <li>
+        <strong>no-console:</strong> Warns when <code>console.log</code> and
+        other console methods are used. It helps keep the codebase clean and
+        avoids leaving debugging statements in production code.
+      </li>
+      <li>
+        <strong>quotes:</strong> Enforces the use of single quotes for strings.
+        Consistent quoting improves code readability and reduces potential
+        errors when dealing with mixed quotes.
+      </li>
+      <li>
+        <strong>no-unused-vars:</strong> Warns about variables that are defined
+        but never used in the code. This helps to clean up the code and remove
+        unnecessary variables that could cause confusion or clutter.
+      </li>
+      <li>
+        <strong>eqeqeq:</strong> Enforces the use of strict equality (
+        <code>===</code> and <code>!==</code>) instead of loose equality (
+        <code>==</code> and <code>!=</code>). This avoids type coercion issues
+        that can lead to unexpected behavior in the code.
+      </li>
+    </ul>
+  </div>
+</div>

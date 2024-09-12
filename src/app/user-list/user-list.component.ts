@@ -37,6 +37,6 @@ export class UserListComponent implements OnInit {
   }
 
   loadUsers() {
-    this.users = this.userService.getUsers(); // Direct use of the injected service
+    this.users = this.userService.getUsers();
   }
 }

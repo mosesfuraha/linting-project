@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { UserListComponent } from './user-list/user-list.component';
 import { CommonModule } from '@angular/common';
+import { LintingFormattingComponent } from './linting-formatting/linting-formatting.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [UserListComponent, CommonModule],
+  imports: [UserListComponent, CommonModule, LintingFormattingComponent],
 })
 export class AppComponent implements OnInit {
   title = 'linting-formatting-practice';
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     const x = 10;
     if (x === 10) {
-      return x;
+      this.performAction();
     }
   }
 
@@ -25,4 +26,6 @@ export class AppComponent implements OnInit {
     const y = 20;
     return y;
   }
+
+  private performAction() {}
 }
